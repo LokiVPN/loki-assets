@@ -3078,9 +3078,7 @@
               }
             }
           },
-          "400": {
-            "$ref": "#/components/responses/ErrorResponse"
-          },
+
           "401": {
             "$ref": "#/components/responses/ErrorResponse"
           },
