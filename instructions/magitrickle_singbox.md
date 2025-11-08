@@ -2,8 +2,8 @@
 
 [MagiTrickle](https://magitrickle.dev) | [SingBox](https://sing-box.sagernet.org)
 
-[Видео гайд по прошивке роутера Netis N6](https://www.youtube.com)
-[Видео руководство по установке Entware, MagiTrickle, Sing-box](https://www.youtube.com)
+[Видео гайд по прошивке роутера Netis N6](https://www.youtube.com/watch?v=AQLE734jDZ8s)
+[Видео руководство по установке Entware, MagiTrickle, Sing-box](https://www.youtube.com/watch?v=NjPYz0YgSMA&)
 
 ## Что потребуется
 
@@ -136,7 +136,7 @@ opkg install sing-box-go
 
 Создать конфиг можно вручную, или использовать генераторы конфига:
 
-- Kiarant Converter
+- [Kiarant Converter](https://kiarant.github.io/converter)
 
 Примечание: 100% работоспособность конфига не гарантируется ввиду отсутствия возможности проверить все конфигурации.
 
