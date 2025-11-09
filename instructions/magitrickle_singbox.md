@@ -1,9 +1,10 @@
 # Magitrickle + SingBox Руководство
 
-[MagiTrickle](https://magitrickle.dev) | [SingBox](https://sing-box.sagernet.org)
+> [MagiTrickle](https://magitrickle.dev) | [SingBox](https://sing-box.sagernet.org)
 
-[Видео гайд по прошивке роутера Netis N6](https://www.youtube.com/watch?v=AQLE734jDZ8s)
-[Видео руководство по установке Entware, MagiTrickle, Sing-box](https://www.youtube.com/watch?v=NjPYz0YgSMA&)
+> [Видео гайд по прошивке роутера Netis N6](https://www.youtube.com/watch?v=AQLE734jDZ8s)
+> 
+> [Видео руководство по установке Entware, MagiTrickle, Sing-box](https://www.youtube.com/watch?v=NjPYz0YgSMA&)
 
 ## Что потребуется
 
@@ -36,7 +37,7 @@
 
 Поочередно введите команды и нажмите «Отправить»:
 
-```
+```shell
 dns-proxy tls upstream 1.1.1.1 sni cloudflare-dns.com
 dns-proxy tls upstream 1.0.0.1 sni cloudflare-dns.com
 dns-proxy tls upstream 8.8.4.4 sni dns.google
@@ -105,7 +106,7 @@ system configuration save
 
 Поочередно введите команды:
 
-```
+```shell
 wget -qO- http://bin.magitrickle.dev/packages/add_repo.sh | sh
 opkg update && opkg install magitrickle
 /opt/etc/init.d/S99magitrickle start
@@ -113,7 +114,7 @@ opkg update && opkg install magitrickle
 
 Для обновления пакета в дальнейшем можно использовать команду:
 
-```
+```shell
 opkg update && opkg install magitrickle
 /opt/etc/init.d/S99magitrickle restart
 ```
@@ -126,7 +127,7 @@ Magitrickle запущен. Проверить можно через брауз�
 
 Установите Sing‑Box:
 
-```
+```shell
 opkg install sing-box-go
 ```
 
