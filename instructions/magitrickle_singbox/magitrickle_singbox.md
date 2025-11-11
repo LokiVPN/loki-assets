@@ -29,7 +29,7 @@
 - 8.8.4.4 — `dns.google.com`
 - 8.8.8.8 — `dns.google.com`
 
-![Настройка DNS серверов](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image1.png)
+![Настройка DNS серверов](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/instructions/magitrickle_singbox/image1.png)
 
 ### Вариант 2: Настройка через CLI
 
@@ -45,12 +45,12 @@ dns-proxy tls upstream 8.8.8.8 sni dns.google
 system configuration save
 ```
 
-![Настройка DNS через CLI](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image2.png)
-![Дополнительная настройка CLI](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image3.png)
+![Настройка DNS через CLI](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/instructions/magitrickle_singbox/image2.png)
+![Дополнительная настройка CLI](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image3.png)
 
 В настройках интернет‑соединения включите «Игнорировать DNSv4 интернет‑провайдера» (и DNSv6, если используется IPv6).
 
-![Игнорирование DNS провайдера](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image4.png)
+![Игнорирование DNS провайдера](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image4.png)
 
 ## Установка Entware
 
@@ -60,39 +60,39 @@ system configuration save
 
 [Ссылка на Keenetic Help](https://help.keenetic.com)
 
-![Форматирование флешки](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image5.png)
+![Форматирование флешки](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image5.png)
 
 ### Подготовка роутера
 
 В общих настройках системы «Изменить набор компонентов», установите компонент «Поддержка открытых пакетов» (OPKG).
 
-![Установка компонента OPKG](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image6.png)
+![Установка компонента OPKG](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image6.png)
 
 ### Вариант установки 1: Через CLI
 
 1. Зайдите в командную строку роутера: `http://192.168.1.1/a` или через «Шестеренку» > «Командная строка».  
-   ![Доступ к командной строке](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image8.png)
+   ![Доступ к командной строке](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image8.png)
 2. Введите: `opkg disk`, нажмите Tab, выберите имя флешки (как вы назвали ее при форматировании).  
-   ![Выбор флешки в CLI](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image9.png)
+   ![Выбор флешки в CLI](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image9.png)
 3. Вставьте ссылку для вашей архитектуры:
    - mipsel: https://bin.entware.net/mipselsf-k3.4/installer/mipsel-installer.tar.gz
    - mips: https://bin.entware.net/mipssf-k3.4/installer/mips-installer.tar.gz
    - aarch: https://bin.entware.net/aarch64-k3.10/installer/aarch64-installer.tar.gz  
-   ![Установка Entware через CLI](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image10.png)
+   ![Установка Entware через CLI](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image10.png)
 4. Нажмите «Отправить запрос».
 5. Перейдите во вкладку «Диагностика», откройте журнал, дождитесь: `Opkg::Manager: /opt/etc/init.d/doinstall: [5/5] "Entware" installed!`  
-   ![Журнал установки](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image15.png)
+   ![Журнал установки](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image15.png)
 
 ### Вариант установки 2: Через интерфейс
 
 1. Скачайте инсталлятор Entware для вашего роутера (ссылки в варианте 1), например: `mipsel-installer.tar.gz`.
 2. Вставьте флешку в роутер, зайдите в «Приложения», выберите флешку.  
-   ![Выбор флешки в приложениях](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image11.png)
+   ![Выбор флешки в приложениях](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image11.png)
 3. Создайте папку `install` в корне флешки, загрузите туда инсталлятор.  
-   ![Создание папки install](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image12.png)  
-   ![Загрузка инсталлятора](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image13.png)
+   ![Создание папки install](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image12.png)  
+   ![Загрузка инсталлятора](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image13.png)
 4. Перейдите во вкладку OPKG, выберите накопитель, нажмите «Сохранить».  
-   ![Настройка OPKG](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image14.png)
+   ![Настройка OPKG](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image14.png)
 
 ## Установка Magitrickle
 
@@ -101,8 +101,8 @@ system configuration save
 - Адрес: IP роутера, порт: 222 (или 22, если «Сервер SSH» не установлен).  
 - Логин: `root`, пароль: `keenetic` (смените пароль командой `passwd`).
 
-![Подключение через SSH](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image16.png)
-![Ввод логина и пароля / смена пароля](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image17.png)
+![Подключение через SSH](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image16.png)
+![Ввод логина и пароля / смена пароля](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image17.png)
 
 Поочередно введите команды:
 
@@ -121,7 +121,7 @@ opkg update && opkg install magitrickle
 
 Magitrickle запущен. Проверить можно через браузер: `адрес_роутера:8080`.
 
-![Интерфейс Magitrickle](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image19.png)
+![Интерфейс Magitrickle](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image19.png)
 
 ## Установка Sing‑Box
 
@@ -131,7 +131,7 @@ Magitrickle запущен. Проверить можно через брауз�
 opkg install sing-box-go
 ```
 
-![Установка Sing‑Box](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image20.png)
+![Установка Sing‑Box](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image20.png)
 
 ### Создание конфига
 
@@ -143,8 +143,8 @@ opkg install sing-box-go
 
 Загрузите конфиг в `/opt/etc/sing-box/` (замените стандартный). Я использовал WinSCP. Новое подключение: адрес роутера, порт 222, логин `root`, пароль от entware (если не изменили: `keenetic`).
 
-![Загрузка конфига через WinSCP](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image21.png)
-![Настройка WinSCP](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image22.png)
+![Загрузка конфига через WinSCP](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image21.png)
+![Настройка WinSCP](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image22.png)
 
 ## Настройка маршрутизации
 
@@ -152,37 +152,37 @@ opkg install sing-box-go
 
 1. Нажмите «+», создайте группу.
 2. В выпадающем списке выбираем нужный нам интерфейс: `tun0` или `singtun0` (или как вы его обозвали).  
-   ![Создание группы в Magitrickle](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image27.png)
+   ![Создание группы в Magitrickle](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image27.png)
 3. Для проверки укажите в Pattern, например, `2ip.ru`, сохраните.  
-   ![Настройка Pattern](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image28.png)
+   ![Настройка Pattern](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image28.png)
 4. Откройте браузер в режиме инкогнито, зайдите на https://2ip.ru, проверьте.  
-   ![Проверка на 2ip.ru](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image29.png)
+   ![Проверка на 2ip.ru](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image29.png)
 
 Можете создавать разные группы с разными интерфейсами. Дальше ваша фантазия.
 
 Список доменов для разных сервисов можете найти по ссылке https://iplist.opencck.org (формат «Text», тип «Домены», только wildcard).
 
-![Список доменов](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image30.png)
+![Список доменов](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image30.png)
 
 Для импорта больших списков можете использовать кнопку «Импортировать список»
 
-![Импорт списков](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image_mass_import.png)
-![Вставка списков](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image_mass_import2.png)
-![Результат импорта списков](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image_mass_import3.png)
+![Импорт списков](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image_mass_import.png)
+![Вставка списков](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image_mass_import2.png)
+![Результат импорта списков](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image_mass_import3.png)
 
 Нажимаем «Сохранить изменения».
 
-![Сохранение изменений](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image_MT_save.png)
+![Сохранение изменений](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image_MT_save.png)
 
 ## Типы правил маршрутизации
 
 В интерфейсе Magitrickle доступны следующие типы правил:
 
 - **Namespace (Именное пространство)**: Охватывает домен и поддомены. Например, `example.com`.  
-  ![Namespace](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image31.png)
+  ![Namespace](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image31.png)
 - **Wildcard (Подстановочный шаблон)**: Использует `*` и `?`. Например, `*example.com`.  
-  ![Wildcard](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image32.png)
+  ![Wildcard](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image32.png)
 - **Domain (Точный домен)**: Только указанный домен, без поддоменов. Например, `sub.example.com`.  
-  ![Domain](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image33.png)
+  ![Domain](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image33.png)
 - **RegExp (Регулярное выражение)**: Для опытных пользователей, использует парсер `dlclark/regexp2`. Например, `^[a-z]*example\.com$`.  
-  ![RegExp](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/image34.png)
+  ![RegExp](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image34.png)
