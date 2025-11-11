@@ -29,7 +29,7 @@
 - 8.8.4.4 — `dns.google.com`
 - 8.8.8.8 — `dns.google.com`
 
-![Настройка DNS серверов](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/instructions/magitrickle_singbox/image1.png)
+![Настройка DNS серверов](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image1.png)
 
 ### Вариант 2: Настройка через CLI
 
@@ -45,7 +45,7 @@ dns-proxy tls upstream 8.8.8.8 sni dns.google
 system configuration save
 ```
 
-![Настройка DNS через CLI](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/instructions/magitrickle_singbox/image2.png)
+![Настройка DNS через CLI](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image2.png)
 ![Дополнительная настройка CLI](https://github.com/LokiVPN/loki-assets/raw/refs/heads/main/instructions/magitrickle_singbox/image3.png)
 
 В настройках интернет‑соединения включите «Игнорировать DNSv4 интернет‑провайдера» (и DNSv6, если используется IPv6).
